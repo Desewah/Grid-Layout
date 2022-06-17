@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --color-primary: hsl(198, 17%, 88%);
+  --color-primary-variant: hsl(300, 79%, 54%);
+  --color-secondary: hsl(0, 36%, 86%);
+  --color-secondary-variant: hsl(210, 85%, 73%);
+}
+body {
+  background-color: var(--color-primary);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "c d d"
+    "c e e";
+  gap: 20px;
+  width: 50%;
+}
+main div {
+  padding-bottom: 1em;
+  text-align: center;
+  padding-top: 6em;
+}
+.griditemA {
+  background-color: var(--color-primary-variant);
+  grid-area: a;
+  padding: 7em;
+}
+.griditemB {
+  background-color: var(--color-secondary);
+  grid-area: b;
+  padding: 6em;
+}
+.griditemC {
+  background-color: var(--color-secondary);
+  grid-area: c;
+  padding: 8em;
+}
+.griditemD {
+  background-color: var(--color-secondary-variant);
+  grid-area: d;
+}
+.griditemE {
+  background-color: var(--color-secondary-variant);
+  grid-area: e;
+}
