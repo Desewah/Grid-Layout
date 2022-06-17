@@ -1,0 +1,87 @@
+:root {
+  --color-primary: hsl(0, 0%, 95%);
+  --color-primary-variant: hsla(0, 0%, 100%, 0.75);
+  --mobile-width: 375px;
+  --color-sedan: hsl(31, 77%, 52%);
+  --color-suv: hsl(184, 100%, 22%);
+  --color-luxury: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-primary);
+}
+button {
+  color: var(--color-primary);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+h1 {
+  color: var(--color-primary);
+  font-family: "Big Shoulders Display", cursive;
+  padding-top: 50px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+p {
+  color: var(--color-primary-variant);
+  font-family: "Lexend Deca", sans-serif;
+  padding-top: 30px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+main {
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 20%;
+  flex-wrap: nowrap;
+}
+#suvs {
+  background-color: var(--color-suv);
+}
+#sedan {
+  background-color: var(--color-sedan);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#luxury {
+  background-color: var(--color-luxury);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#sed {
+  color: var(--color-sedan);
+  border-radius: 60px;
+  padding: 10px 30px 10px 30px;
+  border-color: transparent;
+  margin-top: 8vh;
+}
+#suv {
+  color: var(--color-suv);
+  border-radius: 60px;
+  padding: 10px 30px 10px 30px;
+  border-color: transparent;
+  margin-top: 8vh;
+}
+#lux {
+  color: var(--color-luxury);
+  border-radius: 60px;
+  padding: 10px 30px 10px 30px;
+  border-color: transparent;
+  margin-top: 7vh;
+}
+.column {
+  padding: 8vh;
+  padding-bottom: 40px;
+
+  line-height: 30px;
+  border-color: transparent;
+}
